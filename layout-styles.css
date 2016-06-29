@@ -1,0 +1,142 @@
+html,body {
+  height: 100%;
+  background-color: #ddd;
+  margin: 0px;
+  padding:0px;
+  text-align: center;
+  
+}
+
+.speechBubble-left
+{
+	border-radius: 10px 10px 10px 0px;
+}
+
+.speechBubble-right
+{
+	border-radius: 10px 10px 0px 10px;
+}
+
+.pollPost
+{
+	width: 350px;
+	height: 300px;
+	margin:25px;
+	padding: 0px;
+	/*border: 2px solid hotpink;*/
+	position: relative;
+   overflow:hidden;
+   background-color: #eee;
+	border-radius: 10px 10px 0px 10px;
+	display: inline-block;
+
+}
+
+.pollPost > h1
+{
+	background-color: #31363B;
+	color: white;
+	text-align: right;
+	line-height: 50px;
+	padding:0px 10px 0px 10px;
+	margin:0px;
+	height: 50px;
+
+
+}
+
+.pollPost > p
+{
+	padding: 10px;
+	margin: 0px;
+}
+.pollPost > #decisionQuestion
+{
+	background-color: #ccc;
+	position: absolute;
+	bottom: 50px;
+	border-radius: 0px 5px 0px 0px;
+}
+
+.pollPost > div
+{
+	background-color: #f44336;
+	position: absolute;
+	bottom: 0px;
+	margin: 0px;
+	width: 350px;
+	height: 50px;
+	text-align: center;
+
+}
+
+.pollPost button
+{
+	width: 100px;
+	margin: 10px 20px 10px 20px;
+	height: 30px;
+}
+
+#headerDiv
+{
+	text-align: left;
+	color: white;
+	background: #606c88; /* Old browsers */
+	background: -moz-linear-gradient(top,  #606c88 0%, #3f4c6b 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #606c88 0%,#3f4c6b 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #606c88 0%,#3f4c6b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#606c88', endColorstr='#3f4c6b',GradientType=0 ); /* IE6-9 */
+
+	margin: 0px auto;
+	padding: 2px;
+	padding-left: 20px;
+
+}
+
+#headerDiv P
+{
+	font-size: 24pt;
+	padding:0px;
+	margin:0px;
+}
+
+#comingSoonDiv
+{
+	width:900px;
+	margin: 50px auto;
+	padding:5px 10px 5px 10px;
+	background-color: #eee;
+}
+
+#addPostButton
+{
+	background-color: #4CAF50; /* Green */
+   border: 2px solid #4CAF50;
+   color: white;
+   padding: 15px 32px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   
+	position: absolute;
+	right: 150px;
+	border-radius: 4px;
+	
+	-webkit-transition-duration: 0.4s; /* Safari */
+   transition-duration: 0.4s;
+	
+}
+
+#addPostButton:hover
+{
+	background-color: #eee;
+	color: black;
+	
+}
+
+#comingSoonDiv P, h2
+{
+	padding: 0px;
+	margin:5px;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+	<title>Decide for Me</title>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+   <link rel="stylesheet" type="text/css" href="layout-styles.css">
+</head>
+<body id="body">
+
+<div id="headerDiv" class="">
+<p>Decide4Me</p>
+Let the internet decide...
+</div>
+
+<button id="addPostButton" onclick="appendPost()" >Add Test Post</button>
+
+<div id="comingSoonDiv" class="speechBubble-right">
+<h2>Coming Soon</h2>
+<p>Don't make your mind up.</p>
+</div>
+
+<div class="pollPost" >
+<h1>Test Post Heading</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse non eros auctor erat imperdiet sollicitudin id id lectus. Curabitur iaculis consectetur ante, ut semper erat. Vivamus molestie luctus mattis. Aliquam erat volutpat. Mauris euismod ultrices ex ut consequat metus.</p>
+
+<p id="decisionQuestion">What do <b>you</b> think?</p>
+<div>
+<button>Yes</button>
+<button>No</button>
+</div>
+</div>
+
+	<script>
+		var bodyElement = document.getElementById("body");
+		var postFormat = "<div class=\x22pollPost\x22><h1>Test Post Heading</h1>			<p>Lorem ipsum dolor sit amet.....</p>	<p id=\x22decisionQuestion\x22>What do <b>you</b> think?</p>	<div>	<button>Yes</button> 	<button>No</button>	</div> 	</div>"
+		// /x22 is the javascript universal escape code for " , allowing us to append full HTML content live.		
+								
+	function appendPost() 
+	{
+		bodyElement.insertAdjacentHTML( 'beforeend', postFormat);	
+	}
+	</script>   
+
+</body>
+</html>
